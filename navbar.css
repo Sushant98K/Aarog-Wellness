@@ -169,6 +169,13 @@
     display: block;
 }
 
+.dropdown-menu a {
+  color: #0d1c17 !important;
+}
+.dropdown-menu a:hover {
+  color: #cc3367; /* Or any highlight color */
+}
+
 .dropdown.active .dropdown-menu {
     display: block;
 }
