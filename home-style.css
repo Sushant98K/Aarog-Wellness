@@ -1083,7 +1083,7 @@ html {
   }
 
   .card:nth-child(1) h3 {
-    margin-top: 1rem;
+    margin-top: -1rem;
   }
   .card:nth-child(2) h3 {
     margin-top: 1rem;
