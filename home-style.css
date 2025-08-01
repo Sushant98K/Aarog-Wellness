@@ -545,7 +545,6 @@ html {
   .hero-right p {
     font-size: 18px;
     transform: translate(-10%, -10%);
-
   }
 
   .hero-mask {
@@ -574,7 +573,6 @@ html {
     transform: translate(-50%, -50%);
   }
 }
-
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -705,7 +703,6 @@ html {
     transform: translateX(-40%) scale(0.75);
   }
 }
-
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -922,7 +919,6 @@ html {
   }
 }
 
-
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .service-heading {
   background-color: var(--light-background);
@@ -999,7 +995,6 @@ html {
   margin-top: 2.5rem;
 }
 
-
 .card:nth-child(2) h3 {
   margin-top: 2.5rem;
 }
@@ -1007,7 +1002,8 @@ html {
   font-size: 2rem; /* reduced from 2.3rem */
 }
 
-.mobile-only-1, .mobile-only-2 {
+.mobile-only-1,
+.mobile-only-2 {
   display: none;
 }
 
@@ -1087,28 +1083,28 @@ html {
   }
 
   .card:nth-child(1) h3 {
-    margin-top: 1rem;
+    margin-top: -1rem;
   }
   .card:nth-child(2) h3 {
     margin-top: 1rem;
   }
 
   .massage-icon {
-  transform: translate(-130px, -10px);
+    transform: translate(-130px, -10px);
     width: 240px;
   }
 
   .face-icon {
-  transform: translate(90px, -10px);
+    transform: translate(90px, -10px);
     height: 170px;
   }
 }
 
 @media (max-width: 410px) {
-      .card-icon.mobile-only-1{
-        /* width: 1px; */
-        transform: translateY(-30px);
-    }
+  .card-icon.mobile-only-1 {
+    /* width: 1px; */
+    transform: translateY(-30px);
+  }
 }
 
 /* Tablet (768px – 1023px) */
@@ -1125,12 +1121,11 @@ html {
     font-size: 4.4rem; /* reduced from 5.2rem */
   }
 
-   .card:first-child a {
+  .card:first-child a {
     padding-top: 40px;
     text-wrap-mode: wrap;
   }
 
-  
   .service-heading .service-icon {
     width: 200px;
     transform: translate(90%, 0%);
@@ -1267,7 +1262,6 @@ html {
   }
 }
 
-
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .advantages {
@@ -1402,7 +1396,7 @@ html {
   justify-content: center;
   background-color: var(--primary);
   color: var(--accent);
-  min-height: 420px;
+  min-height: 380px;
   padding: 30px 20px;
   gap: 30px;
   opacity: 0;
@@ -1441,7 +1435,7 @@ html {
 }
 
 .testimonial-content h3 {
-  font-size: 52px;
+  font-size: 45px;
   margin-bottom: 20px;
   color: var(--accent);
   text-shadow: 1px 1px 1px #000;
@@ -1449,7 +1443,7 @@ html {
 }
 
 .testimonial-content p {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.6;
   color: var(--accent);
 }
@@ -1458,12 +1452,12 @@ html {
   font-size: 380px;
   position: absolute;
   color: #ac947b;
-  transform: translate(220px, -50px);
+  transform: translate(220px, -40px);
   z-index: 1;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 779px) {
   .testimonial-card {
     flex-direction: column;
     text-align: center;
@@ -1491,29 +1485,34 @@ html {
 
   .quote-mark {
     right: 0;
-    transform: translate(25px, -32px);
+    transform: translate(25px, -60px);
   }
 }
 
 @media (max-width: 380px) {
-
   .client-photo {
-  width: 130px;
-  height: 130px;
-  left: -40px;
+    width: 130px;
+    height: 130px;
+    left: -40px;
   }
 
   .quote-mark {
     right: 0;
+    font-size: 280px;
     transform: translate(50px, -82px);
   }
   .testimonial-content h3 {
-    margin-top: 20px;
+    margin-top: 100px;
+  }
+  .testimonial-content p {
+    font-size: 18px;
+    margin-bottom: 42px;
+    margin-top: -35px;
   }
 }
 
 /* ✅ Tablet View Adjustments (768px–1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 780px) and (max-width: 1023px) {
   .testimonial h2 {
     font-size: 90px; /* ~18% reduced */
   }
@@ -1532,26 +1531,23 @@ html {
 
   .quote-mark {
     font-size: 320px; /* ~16% reduced */
-    transform: translate(159px, -5px);
+    transform: translate(159px, -35px);
   }
 
-
   .testimonial-card {
-    max-width: 550px; 
-    margin: 0 auto;  
+    max-width: 550px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1024px) {
   .testimonial-card {
-    max-width: 700px; 
-    margin: 0 auto;  
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 

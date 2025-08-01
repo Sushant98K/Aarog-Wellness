@@ -1,5 +1,3 @@
-
-
 /*document.querySelectorAll('.gallery img').forEach(img => {
   img.addEventListener('mouseenter', () => {
     img.style.transform = 'scale(1.05)';
@@ -19,12 +17,6 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 */
-
-  
-
-
-
-
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch("navbar.html")
@@ -54,40 +46,34 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("show");
-    }
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("show");
+}
 
+const servicesDropdown = document.getElementById("servicesDropdown");
+const arrow = servicesDropdown.querySelector(".arrow");
 
+arrow.addEventListener("click", (e) => {
+  e.stopPropagation(); // prevent bubbling
+  servicesDropdown.classList.toggle("active");
+});
 
+// Optional: Click outside to close
+document.addEventListener("click", function (event) {
+  if (!servicesDropdown.contains(event.target)) {
+    servicesDropdown.classList.remove("active");
+  }
+});
 
-    const servicesDropdown = document.getElementById('servicesDropdown');
-    const arrow = servicesDropdown.querySelector('.arrow');
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+// const servicesDropdown = document.getElementById('servicesDropdown');
 
-    arrow.addEventListener('click', (e) => {
-      e.stopPropagation(); // prevent bubbling
-      servicesDropdown.classList.toggle('active');
-    });
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
 
-    // Optional: Click outside to close
-    document.addEventListener('click', function (event) {
-      if (!servicesDropdown.contains(event.target)) {
-        servicesDropdown.classList.remove('active');
-      }
-    });
-
-
-
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    // const servicesDropdown = document.getElementById('servicesDropdown');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-
-    servicesDropdown.addEventListener('click', () => {
-      servicesDropdown.classList.toggle('active');
-    });
+servicesDropdown.addEventListener("click", () => {
+  servicesDropdown.classList.toggle("active");
+});
